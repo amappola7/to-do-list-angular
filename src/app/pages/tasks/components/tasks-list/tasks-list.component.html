@@ -1,1 +1,3 @@
-<p>tasks-list works!</p>
+<section class="tasks-list">
+  <app-card *ngFor="let task of tasksList" [title]="task.title" [description]="task.description" [priority]="task.priority"></app-card>
+</section>
