@@ -1,0 +1,29 @@
+{
+  "tasks": [
+    {
+      "title": "Study Angular",
+      "description": "Learn how to use ViewChild and ElementRef",
+      "priority": "high"
+    },
+    {
+      "title": "English class",
+      "description": "Assist to an English private class with EF",
+      "priority": "medium"
+    },
+    {
+      "title": "Clean kitchen",
+      "description": "Do the dishes from last nigth",
+      "priority": "low"
+    },
+    {
+      "title": "Tasks list component",
+      "description": "Create component for the training exercise",
+      "priority": "high"
+    },
+    {
+      "title": "Trash",
+      "description": "Take out the trash",
+      "priority": "low"
+    }
+  ]
+}
