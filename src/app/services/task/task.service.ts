@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, take, tap } from 'rxjs';
+import { Observable, catchError, take, tap, of } from 'rxjs';
 import { Task } from 'src/app/models/task';
 
 @Injectable({
@@ -17,5 +17,16 @@ export class TaskService {
       take(1),
       tap(() => console.log('Petition get tasks succesful'))
     )
+  }
+
+  createTask(task: Task): Observable<Task> {
+    return this._http.post<Task>(this._url, task)
+    .pipe(
+      tap((result) => console.log('Task created')),
+      catchError((error) => {
+        console.log('error');
+        return of(error);
+      })
+    );
   }
 }

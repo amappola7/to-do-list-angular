@@ -29,6 +29,18 @@
       "title": "Trash",
       "description": "Take out the trash",
       "priority": "Low"
+    },
+    {
+      "id": 6,
+      "title": "Buy groceries",
+      "description": "Buy ingredients to make lunch",
+      "priority": "Medium"
+    },
+    {
+      "id": 7,
+      "title": "Wonka",
+      "description": "Buy tickets to watch Wonka",
+      "priority": "Low"
     }
   ]
 }

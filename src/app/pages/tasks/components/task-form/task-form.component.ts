@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
+import { TaskService } from 'src/app/services/task/task.service';
 
 @Component({
   selector: 'app-task-form',
@@ -13,7 +14,12 @@ export class TaskFormComponent {
     priority: new FormControl(''),
   });
 
+  constructor(
+    private taskService: TaskService
+  ) {}
+
   onSubmit(): void {
-    console.log(this.taskForm.value);
+    this.taskService.createTask(this.taskForm.value)
+    .subscribe((result) => console.log(result));
   }
 }
