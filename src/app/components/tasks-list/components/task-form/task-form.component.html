@@ -1,1 +1,20 @@
-<p>task-form works!</p>
+<form class="task-form" [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+  <div class="input-container">
+    <label for="task-title">Title</label>
+    <input id="task-title" formControlName="title" type="text">
+  </div>
+  <div class="input-container">
+    <label for="task-description">Description</label>
+    <input id="task-description" formControlName="description" type="text">
+  </div>
+  <div class="input-container">
+    <label for="task-priority">Priority</label>
+    <select name="task-priority" id="task-priority" formControlName="priority">
+      <option value="">-- Priority --</option>
+      <option value="High">High</option>
+      <option value="Medium">Medium</option>
+      <option value="Low">Low</option>
+    </select>
+  </div>
+  <button>Submit</button>
+</form>
