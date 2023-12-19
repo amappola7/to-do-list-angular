@@ -8,6 +8,7 @@ import { TaskFormComponent } from './pages/tasks/components/task-form/task-form.
 import { ReactiveFormsModule } from '@angular/forms';
 import { TasksComponent } from './pages/tasks/tasks.component';
 import { CardComponent } from './shared/components/card/card.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CardComponent } from './shared/components/card/card.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
