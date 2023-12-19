@@ -1,0 +1,5 @@
+@import "../../../../../styles.scss";
+
+.tasks-list {
+  @include displayFlex(column, flex-start, center, 1.5rem);
+}

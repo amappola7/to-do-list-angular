@@ -41,6 +41,24 @@
       "title": "Wonka",
       "description": "Buy tickets to watch Wonka",
       "priority": "Low"
+    },
+    {
+      "title": "Study English",
+      "description": "Learn 10 new words of the Anki deck",
+      "priority": "Medium",
+      "id": 8
+    },
+    {
+      "title": "Study English",
+      "description": "Learn 10 new words of the Anki deck",
+      "priority": "Medium",
+      "id": 9
+    },
+    {
+      "title": "Public services",
+      "description": "Pay electric and water bill",
+      "priority": "High",
+      "id": 10
     }
   ]
 }

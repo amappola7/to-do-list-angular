@@ -1,0 +1,27 @@
+$font-family: 'League Spartan', sans-serif;
+$red: #f94144;
+$orange: #f8961e;
+$green: #55b347;
+$blue: #00b4d8;
+$blue-variation: #90e0ef;
+$grey: #787a85;
+
+@mixin displayFlex($flex-direction: row, $justify-content, $align-items, $gap: 0, $wrap: wrap) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  gap: $gap;
+  flex-wrap: $wrap;
+}
+
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-family;
+}

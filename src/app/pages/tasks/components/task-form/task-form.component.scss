@@ -1,0 +1,51 @@
+@import "../../../../../styles.scss";
+
+.task-form-container {
+  @include displayFlex(column, center, center, 2rem);
+  width: 100%;
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .task-form {
+    @include displayFlex(column, center, center, 1.2rem);
+    width: 85%;
+    font-size: 1.5rem;
+
+    .input-container {
+      @include displayFlex(row, flex-start, center, 1.2rem);
+      width: 100%;
+
+      .lbl {
+        width: 8rem;
+      }
+
+      .ipt {
+        width: calc(100% - 10rem);
+        height: 3.2rem;
+        padding: 0.5rem;
+        border: $grey 0.1rem solid;
+        border-radius: 0.4rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+
+      }
+
+      .textarea {
+        height: 10rem;
+        resize: none;
+      }
+    }
+
+    button {
+      width: 8rem;
+      height: 3.2rem;
+      border: none;
+      border-radius: 0.4rem;
+      color: white;
+      background-color: $blue;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import '../../../styles.scss';
+
+.tasks {
+  @include displayFlex(row, space-between, flex-start);
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vw;
+
+  .task-form {
+    @include displayFlex(row, center, center);
+    width: 40%;
+    height: 100%;
+    padding: 3rem;
+  }
+
+  .tasks-list {
+    @include displayFlex(row, center, flex-start);
+    width: 60%;
+    padding: 3rem;
+  }
+}
