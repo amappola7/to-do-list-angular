@@ -4,31 +4,31 @@
       "id": 1,
       "title": "Study Angular",
       "description": "Learn how to use ViewChild and ElementRef",
-      "priority": "high"
+      "priority": "High"
     },
     {
       "id": 2,
       "title": "English class",
       "description": "Assist to an English private class with EF",
-      "priority": "medium"
+      "priority": "Medium"
     },
     {
       "id": 3,
       "title": "Clean kitchen",
       "description": "Do the dishes from last nigth",
-      "priority": "low"
+      "priority": "Low"
     },
     {
       "id": 4,
       "title": "Tasks list component",
       "description": "Create component for the training exercise",
-      "priority": "high"
+      "priority": "High"
     },
     {
       "id": 5,
       "title": "Trash",
       "description": "Take out the trash",
-      "priority": "low"
+      "priority": "Low"
     }
   ]
 }
