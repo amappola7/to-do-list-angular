@@ -7,13 +7,15 @@ import { TasksListComponent } from './pages/tasks/components/tasks-list/tasks-li
 import { TaskFormComponent } from './pages/tasks/components/task-form/task-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TasksComponent } from './pages/tasks/tasks.component';
+import { CardComponent } from './shared/components/card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TasksListComponent,
     TaskFormComponent,
-    TasksComponent
+    TasksComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
