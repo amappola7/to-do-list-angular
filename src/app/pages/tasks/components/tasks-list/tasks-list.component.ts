@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Task } from 'src/app/models/task';
 
 @Component({
   selector: 'app-tasks-list',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./tasks-list.component.scss']
 })
 export class TasksListComponent {
-
+  tasksList: Task[] = [];
 }
