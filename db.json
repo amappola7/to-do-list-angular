@@ -1,64 +1,11 @@
 {
   "tasks": [
     {
-      "id": 1,
       "title": "Study Angular",
-      "description": "Learn how to use ViewChild and ElementRef",
-      "priority": "High"
-    },
-    {
-      "id": 2,
-      "title": "English class",
-      "description": "Assist to an English private class with EF",
-      "priority": "Medium"
-    },
-    {
-      "id": 3,
-      "title": "Clean kitchen",
-      "description": "Do the dishes from last nigth",
-      "priority": "Low"
-    },
-    {
-      "id": 4,
-      "title": "Tasks list component",
-      "description": "Create component for the training exercise",
-      "priority": "High"
-    },
-    {
-      "id": 5,
-      "title": "Trash",
-      "description": "Take out the trash",
-      "priority": "Low"
-    },
-    {
-      "title": "Buy groceries",
-      "description": "Buy tomato, lettuce and onions",
-      "priority": "Medium",
-      "id": 6
-    },
-    {
-      "title": "Buy groceries",
-      "description": "asdasd",
+      "description": "Topics: ViewChild, ElementRef",
       "priority": "High",
-      "id": 7
-    },
-    {
-      "title": "Breakfast",
-      "description": "Prepare and have breakfast",
-      "priority": "High",
-      "id": 8
-    },
-    {
-      "title": "Consentir a Onix",
-      "description": "Sin descripción",
-      "priority": "High",
-      "id": 9
-    },
-    {
-      "title": "Pagar recibos",
-      "description": "De luz y de agua",
-      "priority": "Medium",
-      "id": 10
+      "status": "pending",
+      "id": 1
     }
   ]
 }

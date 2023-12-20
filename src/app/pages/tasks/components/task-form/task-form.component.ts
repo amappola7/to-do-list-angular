@@ -2,6 +2,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { Task } from 'src/app/models/task';
 import { TaskService } from 'src/app/services/task/task.service';
+import { taskMapper } from 'src/app/shared/utils/task-mapper';
 
 @Component({
   selector: 'app-task-form',
@@ -22,7 +23,7 @@ export class TaskFormComponent {
   ) {}
 
   onSubmit(): void {
-    this.taskService.createTask(this.taskForm.value)
+    this.taskService.createTask(taskMapper(this.taskForm.value))
     .subscribe((result) => {
       this.taskSavedNotification.emit(result);
       this.taskForm.reset();
