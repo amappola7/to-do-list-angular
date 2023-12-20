@@ -6,6 +6,20 @@
       "priority": "High",
       "status": "pending",
       "id": 1
+    },
+    {
+      "title": "Buy groceries",
+      "description": "Tomatos, onions, lettuce, bread, beans",
+      "priority": "Low",
+      "status": "pending",
+      "id": 2
+    },
+    {
+      "title": "Study English",
+      "description": "Finish lesson 4 unit 6, schedule private classes",
+      "priority": "Medium",
+      "status": "pending",
+      "id": 3
     }
   ]
 }

@@ -3,6 +3,10 @@ export interface RawTask {
   description: string,
   priority: string
 };
-export interface Task extends RawTask {
+export interface FormTask extends RawTask {
   status: string
 };
+
+export interface Task extends FormTask {
+  id: number
+}

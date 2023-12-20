@@ -18,13 +18,14 @@ export class TasksListComponent implements OnInit{
 
   ngOnInit(): void {
     this.taskService.getTasks()
-    .pipe(
-      take(1)
-    )
     .subscribe((tasks) => this.tasksList = tasks);
   }
 
   saveTask(task: Task) {
     this.tasksList.push(task);
+  }
+
+  removeTask(id: number) {
+    this.tasksList = this.tasksList.filter((task) => task.id == id ? false : task);
   }
 }

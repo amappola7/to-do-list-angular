@@ -1,6 +1,6 @@
-import { RawTask, Task } from "src/app/models/task";
+import { RawTask, FormTask } from "src/app/models/task";
 
-export const taskMapper = (rawTask: RawTask): Task => {
+export const taskMapper = (rawTask: RawTask): FormTask => {
   return {
     ...rawTask,
     status: 'pending'

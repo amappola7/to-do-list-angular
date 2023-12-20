@@ -2,7 +2,7 @@
   <h2>{{ task.title }}</h2>
   <p>{{ task.description }}</p>
   <div class="buttons">
-    <button class="trash-button"><fa-icon [icon]="trashIcon"></fa-icon></button>
+    <button class="trash-button"><fa-icon [icon]="trashIcon" (click)="deleteTask(task.id)"></fa-icon></button>
     <select id="" class="btn">
       <option value="Pending">Pending</option>
       <option value="In Progress">In Progress</option>
