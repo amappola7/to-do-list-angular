@@ -1,5 +1,17 @@
 <div class="card">
   <h2>{{ title }}</h2>
   <p>{{ description }}</p>
-  <button [ngClass]="priority" type="button">{{ priority }}</button>
+  <div class="buttons">
+    <button><fa-icon [icon]=""></fa-icon></button>
+    <select id="" class="btn">
+      <option value="Pending">Pending</option>
+      <option value="In Progress">In Progress</option>
+      <option value="Done">Done</option>
+    </select>
+    <select id="" [ngClass]="priority" class="btn">
+      <option value="High">High</option>
+      <option value="Medium">Medium</option>
+      <option value="Low">Low</option>
+    </select>
+  </div>
 </div>

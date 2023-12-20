@@ -22,13 +22,22 @@
     padding-bottom: 1rem;
   }
 
-  button {
-    width: 6rem;
+  .btn {
+    width: 6.8rem;
     height: 2.2rem;
     border: none;
     border-radius: calc(2.2rem / 2);
     color: white;
+    text-align: center;
+    background-color: grey;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
+
+  .btn:focus {
+    outline: none
+  };
 
   .High {
     background-color: $red;
