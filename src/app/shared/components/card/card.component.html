@@ -1,6 +1,6 @@
 <div class="card">
-  <h2>{{ title }}</h2>
-  <p>{{ description }}</p>
+  <h2>{{ task.title }}</h2>
+  <p>{{ task.description }}</p>
   <div class="buttons">
     <button class="trash-button"><fa-icon [icon]="trashIcon"></fa-icon></button>
     <select id="" class="btn">
@@ -8,7 +8,7 @@
       <option value="In Progress">In Progress</option>
       <option value="Done">Done</option>
     </select>
-    <select id="" [ngClass]="priority" class="btn">
+    <select id="" [ngClass]="task.priority" class="btn">
       <option value="High">High</option>
       <option value="Medium">Medium</option>
       <option value="Low">Low</option>

@@ -11,6 +11,6 @@ export class TasksComponent {
   @ViewChild(TasksListComponent) tasksListComponent!: TasksListComponent;
 
   onTaskSaved(task: Task) {
-    this.tasksListComponent.saveTask(task); 
+    this.tasksListComponent.saveTask(task);
   }
 }

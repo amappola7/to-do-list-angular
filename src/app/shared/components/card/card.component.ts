@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { IconDefinition, faTrash } from '@fortawesome/free-solid-svg-icons';
+import { Task } from 'src/app/models/task';
 
 @Component({
   selector: 'app-card',
@@ -8,7 +9,5 @@ import { IconDefinition, faTrash } from '@fortawesome/free-solid-svg-icons';
 })
 export class CardComponent {
   trashIcon: IconDefinition = faTrash;
-  @Input() title!: string;
-  @Input() description!: string;
-  @Input() priority!: string;
+  @Input() task!: Task;
 }
