@@ -3,7 +3,7 @@
 .card {
   @include displayFlex(column, flex-start, flex-end);
   width: 35rem;
-  height: 15rem;
+  height: 10rem;
   padding: 1.5rem;
   border: $grey 0.1rem solid ;
   border-radius: 1rem;

@@ -14,7 +14,6 @@ export class TaskService {
   getTasks(): Observable<Task[]> {
     return this._http.get<Task[]>(this._url)
     .pipe(
-      take(1),
       tap(() => console.log('Petition get tasks succesful'))
     )
   }

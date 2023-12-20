@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { Task } from 'src/app/models/task';
+import { TasksListComponent } from './components/tasks-list/tasks-list.component';
 
 @Component({
   selector: 'app-tasks',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./tasks.component.scss']
 })
 export class TasksComponent {
+  @ViewChild(TasksListComponent) tasksListComponent!: TasksListComponent;
 
+  onTaskSaved(task: Task) {
+    this.tasksListComponent.saveTask(task); 
+  }
 }

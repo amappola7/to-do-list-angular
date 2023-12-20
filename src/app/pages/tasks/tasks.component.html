@@ -1,6 +1,6 @@
 <section class="tasks">
   <div class="task-form">
-    <app-task-form></app-task-form>
+    <app-task-form (taskSavedNotification)="onTaskSaved($event)"></app-task-form>
   </div>
   <div class="tasks-list">
     <app-tasks-list></app-tasks-list>
